@@ -8,6 +8,8 @@ This is a basic OS (Operating System) emulator available under the "BSD 3-Clause
 Heló,
 
 Ez egy alap operációs rendszer emulátor, mely a BSD 3-Clause “New” or “Revised” License licensz alatt érhető el. Nyugodtan használd fel a projektjeidhez a licensznek megfelelően.
+---
+
 
 BSD 3-Clause License
 
