@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8177829F-ACE4-4F24-B548-94337B70B4C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TheDanOS.My.MyApplication</StartupObject>
+    <RootNamespace>TheDanOS</RootNamespace>
+    <AssemblyName>TheDanOS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TheDanOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TheDanOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon %2817%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllPrograms.Designer.vb">
+      <DependentUpon>AllPrograms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllPrograms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlPanel.Designer.vb">
+      <DependentUpon>ControlPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Folders.Designer.vb">
+      <DependentUpon>Folders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Folders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="danmediaplayer.Designer.vb">
+      <DependentUpon>danmediaplayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="danmediaplayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fejlesztoisegitseg.Designer.vb">
+      <DependentUpon>fejlesztoisegitseg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fejlesztoisegitseg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadOS.Designer.vb">
+      <DependentUpon>LoadOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementObject.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Path.vb" />
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundClass.vb" />
+    <Compile Include="StartMenu.Designer.vb">
+      <DependentUpon>StartMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StartMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Symolinbrowsser.Designer.vb">
+      <DependentUpon>Symolinbrowsser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Symolinbrowsser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="szunetradio.Designer.vb">
+      <DependentUpon>szunetradio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="szunetradio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskManager.Designer.vb">
+      <DependentUpon>TaskManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TaskManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Times.Designer.vb">
+      <DependentUpon>Times.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Times.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeView1.vb" />
+    <Compile Include="Users.Designer.vb">
+      <DependentUpon>Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AllPrograms.resx">
+      <DependentUpon>AllPrograms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlPanel.resx">
+      <DependentUpon>ControlPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Folders.resx">
+      <DependentUpon>Folders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danmediaplayer.resx">
+      <DependentUpon>danmediaplayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fejlesztoisegitseg.resx">
+      <DependentUpon>fejlesztoisegitseg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadOS.resx">
+      <DependentUpon>LoadOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartMenu.resx">
+      <DependentUpon>StartMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Symolinbrowsser.resx">
+      <DependentUpon>Symolinbrowsser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="szunetradio.resx">
+      <DependentUpon>szunetradio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskManager.resx">
+      <DependentUpon>TaskManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Times.resx">
+      <DependentUpon>Times.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_app-tile-block-menu-setting_2203529.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desktop 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon %2817%29.ico" />
+    <Content Include="favicon.ico" />
+    <None Include="Resources\water.jpg" />
+    <None Include="Resources\thenight.jpg" />
+    <None Include="Resources\thelights.jpg" />
+    <None Include="Resources\nightcity.jpg" />
+    <None Include="Resources\masterpiece.jpg" />
+    <None Include="Resources\idk.jpg" />
+    <None Include="Resources\grand.jpg" />
+    <None Include="Resources\coldpark.jpg" />
+    <None Include="Resources\cat.jpg" />
+    <None Include="Resources\arabs.jpg" />
+    <None Include="Resources\Startup.wav" />
+    <None Include="Resources\Startup.mp3" />
+    <None Include="Resources\Screenshot_7.png" />
+    <None Include="Resources\iconfinder_media-playback-start_118787.png" />
+    <None Include="Resources\Screenshot_6.png" />
+    <None Include="Resources\Internet.png" />
+    <None Include="Resources\NoInternet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
